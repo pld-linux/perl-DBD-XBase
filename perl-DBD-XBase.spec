@@ -9,7 +9,7 @@ Summary:	XBase - reading and writing the DBF files from Perl
 Summary(pl):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
 Version:	0.241
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -59,6 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
+# get rid of pod documentation
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/XBase/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
