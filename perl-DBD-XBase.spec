@@ -5,7 +5,7 @@ Summary:	DBD::XBase perl module
 Summary(pl):	Modu³ perla DBD::XBase
 Name:		perl-DBD-XBase
 Version:	0.200
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
