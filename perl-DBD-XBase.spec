@@ -2,7 +2,7 @@
 Summary:	DBD-XBase perl module
 Summary(pl):	Modu³ perla DBD-XBase
 Name:		perl-DBD-XBase
-Version:	0.177
+Version:	0.200
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
