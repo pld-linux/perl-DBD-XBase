@@ -5,10 +5,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	XBase
-Summary:	XBase - Reading and writing the DBF files from Perl
-Summary(pl):	XBase - Czytanie i zapisywanie plików DBF z poziomu Perla
+Summary:	XBase - reading and writing the DBF files from Perl
+Summary(pl):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
-Version:	0.231
+Version:	0.232
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README ToDo
-%attr(755,root,root) %{_bindir}/dbfdump
+%attr(755,root,root) %{_bindir}/*dump
 %{perl_sitelib}/DBD/XBase.pm
 %{perl_sitelib}/XBase.pm
 %{perl_sitelib}/XBase
