@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	XBase
-%include	/usr/lib/rpm/macros.perl
 Summary:	DBD-XBase perl module
 Summary(pl):	Modu³ perla DBD-XBase
 Name:		perl-DBD-XBase
 Version:	0.200
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ DBD-XBase perl module.
 Modu³ perla DBD-XBase.
 
 %prep
-%setup -q -n DBD-XBase-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
