@@ -8,8 +8,8 @@
 Summary:	XBase - Reading and writing the DBF files from Perl
 Summary(pl):	XBase - Czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
-Version:	0.220
-Release:	2
+Version:	0.231
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
