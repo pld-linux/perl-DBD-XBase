@@ -1,0 +1,3 @@
+- version 2.220
+- provided informative summary/description
+- new %doc, moved examples to %_examplesdir, enabled tests
