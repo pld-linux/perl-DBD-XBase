@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBD
-%define	pnam	XBase
+%define		pdir	DBD
+%define		pnam	XBase
 Summary:	XBase - reading and writing the DBF files from Perl
 Summary(pl):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
