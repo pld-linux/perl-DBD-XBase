@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	XBase
-Summary:	DBD-XBase perl module
-Summary(pl):	Modu³ perla DBD-XBase
+Summary:	DBD::XBase perl module
+Summary(pl):	Modu³ perla DBD::XBase
 Name:		perl-DBD-XBase
 Version:	0.200
 Release:	3
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-DBD-XBase perl module.
+DBD::XBase perl module.
 
 %description -l pl
-Modu³ perla DBD-XBase.
+Modu³ perla DBD::XBase.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
