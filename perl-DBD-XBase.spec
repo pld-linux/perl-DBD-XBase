@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
@@ -8,14 +8,15 @@
 Summary:	XBase - reading and writing the DBF files from Perl
 Summary(pl):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
-Version:	0.240
+Version:	0.241
 Release:	1
-License:	GPL/Artistic
+# same as Perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	63bd3dbaa26d41679f61107df45f8c1b
+# Source0-md5:	ed36f8722f09406d35c8af801fa78c3b
 BuildRequires:	perl-devel >= 5.8
-%if 0%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-DBI
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -48,7 +49,7 @@ modu³ów i stron manuala DBD::XBase i DBI.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
