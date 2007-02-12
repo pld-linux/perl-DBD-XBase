@@ -6,7 +6,7 @@
 %define		pdir	DBD
 %define		pnam	XBase
 Summary:	XBase - reading and writing the DBF files from Perl
-Summary(pl):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
+Summary(pl.UTF-8):   XBase - czytanie i zapisywanie plikÃ³w DBF z poziomu Perla
 Name:		perl-DBD-XBase
 Version:	0.241
 Release:	2
@@ -32,14 +32,14 @@ man page. Module XBase provides simple native interface to XBase
 files. For DBI compliant database access, see the DBD::XBase and DBI
 modules and their man pages.
 
-%description -l pl
-Ten modu³ mo¿e czytaæ i zapisywaæ pliki baz danych XBase, znane jako
-dbf w ¶wiecie dBase i FoxPro. Mo¿e tak¿e czytaæ w razie potrzeby pola
-memo w plików dbt i fpt. Kod w fazie alpha czytaj±cy indeksy ndx, ntx,
-mdx, idx i cdx jest dostêpny do testowania - wiêcej w DBD::Index(3).
-Modu³ XBase udostêpnia prosty natywny interfejs do plików XBase.
-Wiêcej o zgodnym z DBI dostêpie do baz danych mo¿na dowiedzieæ siê z
-modu³ów i stron manuala DBD::XBase i DBI.
+%description -l pl.UTF-8
+Ten moduÅ‚ moÅ¼e czytaÄ‡ i zapisywaÄ‡ pliki baz danych XBase, znane jako
+dbf w Å›wiecie dBase i FoxPro. MoÅ¼e takÅ¼e czytaÄ‡ w razie potrzeby pola
+memo w plikÃ³w dbt i fpt. Kod w fazie alpha czytajÄ…cy indeksy ndx, ntx,
+mdx, idx i cdx jest dostÄ™pny do testowania - wiÄ™cej w DBD::Index(3).
+ModuÅ‚ XBase udostÄ™pnia prosty natywny interfejs do plikÃ³w XBase.
+WiÄ™cej o zgodnym z DBI dostÄ™pie do baz danych moÅ¼na dowiedzieÄ‡ siÄ™ z
+moduÅ‚Ã³w i stron manuala DBD::XBase i DBI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
