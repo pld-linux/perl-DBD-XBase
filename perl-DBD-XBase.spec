@@ -6,7 +6,7 @@
 %define		pdir	DBD
 %define		pnam	XBase
 Summary:	XBase - reading and writing the DBF files from Perl
-Summary(pl.UTF-8):   XBase - czytanie i zapisywanie plików DBF z poziomu Perla
+Summary(pl.UTF-8):	XBase - czytanie i zapisywanie plików DBF z poziomu Perla
 Name:		perl-DBD-XBase
 Version:	0.241
 Release:	2
